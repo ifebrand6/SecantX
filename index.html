@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solid Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <style>
+        body,
+        html {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+        @media (min-width: 767px) {
+            .video-wrapper {
+                top: -6.57895vw;
+                width: auto;
+                height: 69.8947vw;
+                overflow: hidden;
+                position: absolute;
+                object-fit: cover;
+                z-index: -1;
+                min-height: 300px;
+                min-width: 100%;
+            }
+
+            .video-wrapper .player {
+                transform: scale(1.057);
+                position: relative;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+            .hero-copy {
+                width: 39.4211vw;
+                margin-bottom: 2.94737vw;
+            }
+
+            h1 {
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: -0.02em;
+                font-size: 4.2rem;
+            }
+        }
+
+        .hero-paragraph {
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+            font-size: 1.0rem;
+            line-height: 130%;
+            transition: color 200ms cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+    </style>
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="header-logo-image" src="src/images/logo.png" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">The P2P I2 Layer </h1>
+                            <p class="hero-paragraph">SecantX is the premier cross-platform exchange plugin for seamless
+                                peer-to-peer transactions. With SecantX, save time and money managing your P2P
+                                exchanges.</p>
+                            <div class="hero-cta"><a class="button button-primary" href="#">READ LITEPAPER</a><a
+                                    class="button" href="#">JOIN OUR DISCORD</a></div>
+                        </div>
+                        <div class="hero-figure anime-element">
+                            <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+                                <rect width="528" height="396" style="fill:transparent;"></rect>
+                            </svg>
+                            <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"
+                                style="transform: rotate(45deg) scale(1); opacity: 1;"></div>
+                            <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"
+                                style="transform: rotate(-45deg) scale(1); opacity: 1;"></div>
+                            <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"
+                                style="transform: rotate(0deg) scale(1); opacity: 1;"></div>
+                            <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"
+                                style="transform: rotate(-135deg) scale(1); opacity: 1;"></div>
+                            <div class="hero-figure-box hero-figure-box-05"
+                                style="transform: scaleX(1) scaleY(1) perspective(500px) rotateY(-15deg) rotateX(8deg) rotateZ(-1deg);">
+                            </div>
+                            <div class="hero-figure-box hero-figure-box-06"
+                                style="transform: scaleX(1) scaleY(1) perspective(500px) rotateZ(20deg);"></div>
+                            <div class="hero-figure-box hero-figure-box-07"
+                                style="transform: scaleX(1) scaleY(1) perspective(500px) rotateZ(20deg);"></div>
+                            <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"
+                                style="transform: rotate(-22deg) scale(1); opacity: 1;"></div>
+                            <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"
+                                style="transform: rotate(-52deg) scale(1); opacity: 1;"></div>
+                            <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"
+                                style="transform: rotate(-50deg) scale(1); opacity: 1;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+        </main>
+
+
+
+        <div class="video-wrapper">
+            <div style="object-fit: cover; width: 100%; height: 100%;" class="player"><video
+                    src="https://videos.pexels.com/video-files/3129576/3129576-uhd_3840_2160_30fps.mp4"
+                    style="width: 100%; height: 100%;" preload="auto" autoplay="" loop="" playsinline=""
+                    webkit-playsinline="" x5-playsinline=""></video></div>
+        </div>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+    <script>window.onload = () => { document.getElementById("year").textContent = new Date().getFullYear() };</script>
+</body>
+
+</html>
